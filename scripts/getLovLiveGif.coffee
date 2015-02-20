@@ -23,7 +23,7 @@ SOURCES = {
 }
 
 getGif = (blog, msg) ->
-  tumblr.photos(blog).random (post) ->
+  tumblr.photos(blog).random ({"にこ"},post) ->
     msg.send post.photos[0].original_size.url
 
 module.exports = (robot) ->
