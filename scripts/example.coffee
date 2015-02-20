@@ -12,5 +12,8 @@ module.exports = (robot) ->
 	robot.respond /ping/i, (msg) ->
 		msg.send "園田海です。"
 
-	robot.hear /おはよう/i, (msg) ->
-		msg.send "おはようございます"
+	robot.hear /おは.*|/i, (msg) ->
+		msg.reply "おはようございます。"
+
+	robot.hear /お披れ.*|/i, (msg) ->
+		msg.reply "お疲れ様でした。"
