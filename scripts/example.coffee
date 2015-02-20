@@ -12,6 +12,9 @@ module.exports = (robot) ->
 	robot.respond /ping/i, (msg) ->
 		msg.send "‰€“cŠC‚Å‚·B"
 
+	robot.hear /‚¨‚Í‚æ‚¤/i, (msg) ->
+		msg.send "‚¨‚Í‚æ‚¤‚²‚´‚¢‚Ü‚·"
+
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
